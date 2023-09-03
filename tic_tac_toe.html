@@ -1,30 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-toe</title>
-    <link rel="stylesheet" href="tic.css">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="tic.css">
+  <script src="tic.js"></script>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td> </td>
-            <td></td>
-            <td></td> 
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    
+  <h1>Tic Tac Toe</h1>
+  
+  <div id="game-board">
+    <input type="button" class="btn" onclick="makeMove(0)" readonly>
+    <input type="button" class="btn" onclick="makeMove(1)" readonly>
+    <input type="button" class="btn" onclick="makeMove(2)" readonly>
+    <br>
+    <input type="button" class="btn" onclick="makeMove(3)" readonly>
+    <input type="button" class="btn" onclick="makeMove(4)" readonly>
+    <input type="button" class="btn" onclick="makeMove(5)" readonly>
+    <br>
+    <input type="button" class="btn" onclick="makeMove(6)" readonly>
+    <input type="button" class="btn" onclick="makeMove(7)" readonly>
+    <input type="button" class="btn" onclick="makeMove(8)" readonly>
+  </div>
+  
+  <div id="result">Player X's turn</div>
+  
+  <button id="reset-btn" onclick="resetGame()" disabled>Reset</button>
+  
+  <script src="script.js"></script>
 </body>
 </html>
